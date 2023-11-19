@@ -10,7 +10,7 @@ com Python e R e Seja o Profissional Mais Cobiçado da Atualidade`,
       <div className="flex flex-row bg-cinzaPerson1 mt-10 rounded-3xl lg:flex-col">
         <div className="flex-col w-10/12 lg:flex hidden bg-white m-auto mt-5">
           <img
-            src={data.images_link2}
+            src={data.images_link}
             alt=""
             className="w-1/2 m-auto mt-5 mb-0 "
           />
@@ -28,7 +28,7 @@ com Python e R e Seja o Profissional Mais Cobiçado da Atualidade`,
         <img
           src={data.images_link}
           alt=""
-          className="w-1/3 rounded-3xl border-r-4 border-b-4 border-cinzaPerson1 lg:hidden flex"
+          className="w-auto rounded-3xl border-r-4 border-b-4 border-cinzaPerson1 lg:hidden flex m-auto mr-0"
         />
       </div>
     </>

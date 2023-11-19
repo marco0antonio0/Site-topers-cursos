@@ -1,18 +1,18 @@
-export default function GridCursos() {
-  const data = [
-    { name: "ciencias da computação", link: "" },
-    { name: "ciencias da computação", link: "" },
-    { name: "ciencias da computação", link: "" },
-    { name: "ciencias da computação", link: "" },
-    { name: "ciencias da computação", link: "" },
-    { name: "ciencias da computação", link: "" },
-  ];
+export default function GridCursos({ data }) {
+  // const data = [
+  //   { name: "ciencias da computação", link: "" },
+  //   { name: "ciencias da computação", link: "" },
+  //   { name: "ciencias da computação", link: "" },
+  //   { name: "ciencias da computação", link: "" },
+  //   { name: "ciencias da computação", link: "" },
+  //   { name: "ciencias da computação", link: "" },
+  // ];
   return (
     <>
       <div className=" flex flex-row m-auto">
         <div className="flex-wrap w-mxw flex flex-row  m-auto pt-10">
           {data.map((e) => {
-            return <CardItem name={e.name} />;
+            return <CardItem name={e.nome} />;
           })}
         </div>
       </div>

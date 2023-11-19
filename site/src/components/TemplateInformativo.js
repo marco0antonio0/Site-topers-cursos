@@ -16,7 +16,7 @@ function Layout_smartphone() {
   const r = useRouter();
   return (
     <>
-      <div className="flex flex-col bg-cinzas rounded-2xl shadow-xl mt-5 mb-10 pt-5 w-mxw pr-3">
+      <div className="flex flex-col bg-cinzas rounded-2xl shadow-xl mt-5 mb-20 pt-5 w-mxw pr-3 ">
         <div className="flex flex-col w-4/5 m-auto">
           <h1 className="text-6xl font-Lalezar text-cinzaPerson1 m-auto mt-10 ml-0 sm:text-5xl ">
             Comece sua <br />
@@ -51,7 +51,7 @@ function Layout_descktop() {
   const r = useRouter();
   return (
     <>
-      <div className="flex flex-row bg-cinzas rounded-2xl shadow-xl mt-5 pt-10 w-mxw pr-3">
+      <div className="flex flex-row bg-cinzas rounded-2xl shadow-xl mt-5 pt-10 w-mxw pr-3 mb-20">
         <div className="flex flex-col w-1/2 pl-20 xl:pl-10">
           <h1 className="text-6xl  font-Lalezar text-cinzaPerson1 m-auto mt-10 ml-0 ">
             Comece sua <br />

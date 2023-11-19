@@ -14,7 +14,6 @@ export default function Home() {
     if (!data) {
       api_config.get("/get-all").then((e) => {
         setdata(e);
-        console.log(e);
       });
     }
   });

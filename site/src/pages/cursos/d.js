@@ -12,11 +12,8 @@ export default function Home() {
   const [data, setdata] = useState();
   useEffect(() => {
     if (!data && id) {
-      console.log("aaa");
       try {
         api_config.get("/get-one?id=" + id).then((e) => {
-          console.log(e);
-          // console.log(e.data.length < 1);
           setdata(e);
           if (e.data.length < 1) {
             r.push("/404");

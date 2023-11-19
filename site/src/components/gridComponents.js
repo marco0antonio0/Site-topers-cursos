@@ -20,7 +20,7 @@ function Layout_smartphone() {
         {/*=================== */}
         {/* item 1 */}
         <img
-          onClick={() => r.push("/")}
+          onClick={() => r.push("/blogs/sobre")}
           src="/images/componente_grid1_responsive.svg"
           alt=""
           className="w-mxw cursor-pointer select-none active:scale-[1.05]"
@@ -28,7 +28,9 @@ function Layout_smartphone() {
         {/*=================== */}
         {/* item 2 */}
         <img
-          onClick={() => r.push("/")}
+          onClick={() =>
+            r.push("https://github.com/marco0antonio0/Site-topers-cursos")
+          }
           src="/images/componente_grid2_responsive.svg"
           alt=""
           className="w-mxw cursor-pointer select-none active:scale-[1.05]"
@@ -57,7 +59,7 @@ function Layout_desktop() {
           {/*=================== */}
           {/* item 1 */}
           <img
-            onClick={() => r.push("/")}
+            onClick={() => r.push("/blogs/sobre")}
             src="/images/componente_grid1.svg"
             alt=""
             className="h-1/2 flex flex-row content-center items-center align-middle cursor-pointer select-none m-auto mr-0 active:scale-[1.05]"
@@ -65,7 +67,9 @@ function Layout_desktop() {
           {/*=================== */}
           {/* item 2 */}
           <img
-            onClick={() => r.push("/")}
+            onClick={() =>
+              r.push("https://github.com/marco0antonio0/Site-topers-cursos")
+            }
             src="/images/componente_grid2.svg"
             alt=""
             className="h-1/2 flex flex-row content-center items-center align-middle cursor-pointer select-none m-auto mr-0 active:scale-[1.05]"

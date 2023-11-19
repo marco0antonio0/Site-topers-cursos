@@ -1,5 +1,5 @@
 export const api_config = {
-  url: "http://localhost:3000/api",
+  url: "https://api-topercursos.nova-work.cloud/api",
   get: function (url) {
     return new Promise((resolve, reject) => {
       fetch(api_config.url + url)

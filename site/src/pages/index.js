@@ -5,9 +5,9 @@ import TemplateInformativo from "@/components/TemplateInformativo";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <AppBar state={[true, false, false]} />
-      <div className="w-10/12  m-auto">
+      <div className="m-auto w-8/12 xxxl:w-10/12">
         <ImageCard />
         <GridComponents />
         <TemplateInformativo />

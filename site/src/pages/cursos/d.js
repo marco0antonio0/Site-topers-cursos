@@ -29,7 +29,7 @@ export default function Home() {
     <div className="flex flex-col">
       <AppBar state={[false, false, false]} />
       {data ? (
-        <div className="w-10/12  m-auto">
+        <div className="m-auto w-8/12 xxxl:w-10/12">
           <CardInfo data={data.data[0]} />
           <Titulo name="CURSO COMPLETASSO" />
           <p className="text-2xl mt-3 mb-20">{data.data[0].desc}</p>

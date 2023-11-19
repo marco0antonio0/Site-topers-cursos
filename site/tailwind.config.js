@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     screens: {
-      xxxl: { max: "1535px" },
+      xxxl: { max: "1735px" },
       // => @media (max-width: 1535px) { ... }
 
       xxl: { max: "1535px" },
@@ -50,6 +50,7 @@ module.exports = {
         500: "500px",
         700: "700px",
         1200: "1200px",
+        1500: "1500px",
       },
       width: {
         mxw: "100%",

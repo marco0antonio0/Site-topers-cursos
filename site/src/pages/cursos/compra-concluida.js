@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <AppBar state={[false, false, false]} />
-      <div className="w-10/12  m-auto">
+      <div className="m-auto w-8/12 xxxl:w-10/12">
         <div className="w-1/2 m-auto lg:w-2/3 sm:w-10/12">
           <ImageCard
             img1="/images/image_compra_concluida_responsive.svg"

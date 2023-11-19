@@ -37,7 +37,7 @@ A plataforma começou a tomar forma, integrando uma interface amigável, recurso
   return (
     <div className="flex flex-col">
       <AppBar state={[false, false, false]} />
-      <div className="w-10/12  m-auto mb-20">
+      <div className="m-auto w-8/12 xxxl:w-10/12 mb-20">
         <Titulo name="Sobre nos" />
         <ImageCard />
 

@@ -21,7 +21,7 @@ export default function Home() {
     <div className="flex flex-col">
       <AppBar state={[false, true, false]} />
       {data ? (
-        <div className="w-10/12  m-auto">
+        <div className="m-auto w-8/12 xxxl:w-10/12">
           {/* <ImageCard /> */}
           <Titulo />
           <GridCursos data={data.data} />

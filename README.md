@@ -1,7 +1,13 @@
 # Projeto ToperCursos
 
 ![img](/imagesReadme/bannerrrr.png)
+
 Bem-vindo ao ToperCursos, sua plataforma online para explorar, adquirir e aprimorar habilidades através de uma variedade de cursos emocionantes. Desenvolvido em Next.js, o ToperCursos oferece uma experiência de aprendizado avançada, alimentada por atualizações contínuas e uma integração dinâmica com nosso banco de dados.
+
+## Acesso rapido
+
+- [Arquivos do site](/api/)
+- [Arquivos da api](/site/)
 
 ## Páginas Principais
 

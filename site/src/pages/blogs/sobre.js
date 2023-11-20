@@ -19,21 +19,24 @@ Na etapa subsequente, Marco, agora acompanhado por Jean A. Dias, especialista em
 \\
 A plataforma começou a tomar forma, integrando uma interface amigável, recursos avançados e um sistema de atualizações contínuas via API. Cada membro da equipe contribuiu com sua expertise única, enfrentando desafios técnicos com determinação e resiliência.
 `;
-  const creditos = `
-## Desenvolvedor
-- **Marco A. da S. Mesquita**
-\\
-\\
-## Web Design
-- **Alexsandro F. Nascimento**
-- **Beatriz S. Lisboa**
-- **Marco A. da S. Mesquita**
-\\
-\\
-## Modelagem Banco de Dados
-- **Marco A. da S. Mesquita**
-- **Jean A. Dias**    
-`;
+
+  const creditos = [
+    `## **Desenvolvedor**
+- Marco A. da S. Mesquita
+`,
+    `## **Web Design**
+- Alexsandro F. Nascimento
+- Beatriz S. Lisboa
+- Marco A. da S. Mesquita`,
+    `## **Modelagem Banco de Dados**
+- Marco A. da S. Mesquita
+- Jean A. Dias    
+`,
+    `## **Documentação**
+- Alexsandro F. Nascimento
+- Jean A. Dias    
+`,
+  ];
   return (
     <div className="flex flex-col">
       <AppBar state={[false, false, false]} />
@@ -47,7 +50,13 @@ A plataforma começou a tomar forma, integrando uma interface amigável, recurso
           img1="/images/image_ilustrativa.svg"
           img2="/images/image_ilustrativa_responsive.svg"
         />
-        <SectionText text={creditos} />
+        <SectionText text={creditos[0]} />
+        <br />
+        <SectionText text={creditos[1]} />
+        <br />
+        <SectionText text={creditos[2]} />
+        <br />
+        <SectionText text={creditos[3]} />
       </div>
     </div>
   );

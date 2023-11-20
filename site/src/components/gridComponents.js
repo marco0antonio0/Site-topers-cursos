@@ -1,9 +1,17 @@
 import { useRouter } from "next/router";
 
 export default function GridComponents() {
+  const r = useRouter();
   return (
     <>
-      <div className="sm:hidden flex">
+      <div className="sm:hidden flex flex-col">
+        <img
+          onClick={() => r.push("/login")}
+          src="/images/componente_grid_login.svg"
+          alt=""
+          className="flex flex-row m-auto active:scale-[1.05] cursor-pointer"
+        />
+
         <Layout_desktop />
       </div>
       <div className="sm:flex hidden">
@@ -17,6 +25,14 @@ function Layout_smartphone() {
   return (
     <>
       <div className="h-auto w-mxw">
+        {/*=================== */}
+        {/* item 0 */}
+        <img
+          onClick={() => r.push("/login")}
+          src="/images/componente_grid_login_responsive.svg"
+          alt=""
+          className="w-mxw cursor-pointer select-none active:scale-[1.05] "
+        />
         {/*=================== */}
         {/* item 1 */}
         <img

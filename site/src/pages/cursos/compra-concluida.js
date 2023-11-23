@@ -3,11 +3,18 @@ import ImageCard from "@/components/ImageCard";
 import GridComponents from "@/components/gridComponents";
 import TemplateInformativo from "@/components/TemplateInformativo";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function Home() {
   const r = useRouter();
   return (
     <div className="flex flex-col">
+      <Head>
+        <title>
+          Compra Finalizada
+          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        </title>
+      </Head>
       <AppBar state={[false, false, false]} />
       <div className="m-auto w-8/12 xxxl:w-10/12">
         <div className="w-1/2 m-auto lg:w-2/3 sm:w-10/12">

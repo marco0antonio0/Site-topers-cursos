@@ -3,11 +3,18 @@ import ImageCard from "@/components/ImageCard";
 import GridComponents from "@/components/gridComponents";
 import TemplateInformativo from "@/components/TemplateInformativo";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function Home() {
   const r = useRouter();
   return (
     <div className="flex flex-col ">
+      <Head>
+        <title>
+          Cadastro
+          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        </title>
+      </Head>
       <AppBar state={[true, false, false]} />
       <div className="m-auto w-8/12 xxxl:w-10/12 flex flex-col ">
         <h1 className="font-League_Gothic text-7xl text-roxoPerson m-auto my-10 mb-5 lg:mb-0 lg:text-6xl sm:text-5xl">

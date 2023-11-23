@@ -4,6 +4,7 @@ import GridComponents from "@/components/gridComponents";
 import TemplateInformativo from "@/components/TemplateInformativo";
 import Titulo from "@/components/ComponentTitulo";
 import SectionText from "@/components/sectionText";
+import Head from "next/head";
 
 export default function Home() {
   const textmarkdown = `
@@ -39,6 +40,12 @@ A plataforma começou a tomar forma, integrando uma interface amigável, recurso
   ];
   return (
     <div className="flex flex-col">
+      <Head>
+        <title>
+          Blog - sobre nos
+          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        </title>
+      </Head>
       <AppBar state={[false, false, false]} />
       <div className="m-auto w-8/12 xxxl:w-10/12 mb-20">
         <Titulo name="Sobre nos" />

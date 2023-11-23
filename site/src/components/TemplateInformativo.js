@@ -4,7 +4,7 @@ export default function TemplateInformativo() {
   return (
     <>
       <div className="lg:hidden flex">
-        <Layout_descktop />
+        <Layout_desktop />
       </div>
       <div className="lg:flex hidden">
         <Layout_smartphone />
@@ -47,7 +47,7 @@ function Layout_smartphone() {
   );
 }
 
-function Layout_descktop() {
+function Layout_desktop() {
   const r = useRouter();
   return (
     <>
@@ -70,13 +70,29 @@ function Layout_descktop() {
           </div>
         </div>
         <div className="flex flex-col w-1/2 align-middle content-center items-center gap-5 pl-3">
-          <div className="flex flex-row gap-5  mt-10 ml-0">
-            <img src="/images/components_cards1.svg" alt="" className="" />
-            <img src="/images/components_cards2.svg" alt="" className="" />
+          <div className="flex flex-row gap-5  m-auto mb-0 ">
+            <img
+              src="/images/components_cards1.svg"
+              alt=""
+              className="flex xxxl:w-5/12"
+            />
+            <img
+              src="/images/components_cards2.svg"
+              alt=""
+              className="flex xxxl:w-5/12"
+            />
           </div>
-          <div className="flex flex-row gap-5 ">
-            <img src="/images/components_cards3.svg" alt="" className="" />
-            <img src="/images/components_cards4.svg" alt="" className="" />
+          <div className="flex flex-row gap-5 m-auto mt-0">
+            <img
+              src="/images/components_cards3.svg"
+              alt=""
+              className="flex xxxl:w-5/12"
+            />
+            <img
+              src="/images/components_cards4.svg"
+              alt=""
+              className="flex xxxl:w-5/12"
+            />
           </div>
         </div>
       </div>

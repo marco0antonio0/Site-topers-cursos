@@ -1,35 +1,42 @@
 import AppBar from "@/components/topbar";
-import ImageCard from "@/components/ImageCard";
-import GridComponents from "@/components/gridComponents";
-import TemplateInformativo from "@/components/TemplateInformativo";
+import CardInfo from "@/components/cardInfo";
 import Titulo from "@/components/ComponentTitulo";
-import GridCursos from "@/components/gridCursos";
 import { useEffect, useState } from "react";
 import { api_config } from "@/models/api-connection";
+import { useRouter } from "next/router";
 import LoadScreen from "@/components/load";
 import Head from "next/head";
+import ScreenMetodoPagto from "@/components/metodoPagto";
 
 export default function Home() {
+  const r = useRouter();
+  const { id } = r.query;
   const [data, setdata] = useState();
   useEffect(() => {
-    if (!data) {
-      api_config.get("/get-all").then((e) => {
-        setdata(e);
-      });
+    if (!data && id) {
+      try {
+        api_config.get("/get-one?id=" + id).then((e) => {
+          setdata(e);
+          if (e.data.length < 1) {
+            r.push("/404");
+          }
+        });
+      } catch (error) {
+        setdata({ status: false, data: [] });
+        r.push("/404");
+      }
     }
-  });
+  }, [data, id]);
   return (
     <div className="flex flex-col">
       <Head>
-        <title>Todos os curso</title>
+        <title>Curso</title>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
-      <AppBar state={[false, true, false]} />
-      {data ? (
+      <AppBar state={[false, false, false]} />
+      {true ? (
         <div className="m-auto w-8/12 xxxl:w-10/12">
-          {/* <ImageCard /> */}
-          <Titulo />
-          <GridCursos data={data.data} />
+          <ScreenMetodoPagto />
         </div>
       ) : (
         <LoadScreen />

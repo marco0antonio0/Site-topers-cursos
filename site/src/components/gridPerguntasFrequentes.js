@@ -5,6 +5,19 @@ export default function GridPerguntas() {
   const data = [
     { nome: "Sobre Termos e Condições", link: "/blogs/termos" },
     { nome: "Política de Privacidade", link: "/blogs/privacidade" },
+    { nome: "Como fazer login ?", link: "/blogs/topic?d=Como fazer login" },
+    {
+      nome: "Como escolher o curso ?",
+      link: "/blogs/topic?d=Como escolher o curso",
+    },
+    {
+      nome: "Como se cadastrar na plataforma ?",
+      link: "/blogs/topic?d=Como se cadastrar na plataforma",
+    },
+    {
+      nome: "Como comprar um curso ?",
+      link: "/blogs/topic?d=Como comprar um curso",
+    },
   ];
   return (
     <>

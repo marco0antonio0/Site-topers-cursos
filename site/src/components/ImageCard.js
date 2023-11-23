@@ -4,6 +4,8 @@ export default function ImageCard({
 }) {
   return (
     <>
+      {/* =================================================================== */}
+      {/*       Component de display exibir uma imagem responsiva */}
       <img
         src={img1}
         alt=""
@@ -14,6 +16,7 @@ export default function ImageCard({
         alt=""
         className=" h-auto w-screen m-auto mt-7 mb-7 sm:flex hidden"
       />
+      {/* =================================================================== */}
     </>
   );
 }

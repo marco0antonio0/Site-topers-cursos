@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-export default function AppBar({ state = [false, false, false] }) {
+export default function AppBar({ state = [false, false, false, false] }) {
   const [menu, setmenu] = useState(false);
   const r = useRouter();
   return (
@@ -16,7 +16,7 @@ export default function AppBar({ state = [false, false, false] }) {
         />
         {/*================================================ */}
         {/* Div de opções  */}
-        <div className="flex flex-row  m-auto gap-20 lg:mr-20 md:hidden select-none">
+        <div className="flex flex-row  m-auto gap-20 xl:mr-20 md_y:hidden select-none">
           <h3
             onClick={() => r.push("/")}
             className={`font-Lalezar text-2xl pt-5  active:scale-[1.05] cursor-pointer ${
@@ -41,6 +41,14 @@ export default function AppBar({ state = [false, false, false] }) {
           >
             Ajuda
           </h3>
+          <h3
+            onClick={() => r.push("/carrinho")}
+            className={`font-Lalezar text-2xl pt-5  active:scale-[1.05] cursor-pointer  ${
+              !state[3] ? "text-gray-400" : null
+            } `}
+          >
+            Carrinho
+          </h3>
         </div>
         {/*================================================ */}
         {/*                   DROPMENU */}
@@ -51,12 +59,12 @@ export default function AppBar({ state = [false, false, false] }) {
           }}
           src="/images/Menu.svg"
           alt=""
-          className="md:flex sm:right-10 h-2/3 hidden absolute pt-2 right-20 cursor-pointer active:scale-[1.05] select-none"
+          className="md_y:flex sm:right-10 h-2/3 hidden absolute pt-2 right-20 cursor-pointer active:scale-[1.05] select-none"
         />
         {/*==================================================================================== */}
         {/*                   DROPMENU */}
       </div>
-      <div className="md:flex hidden  absolute  right-0 top-24">
+      <div className="md_y:flex hidden  absolute  right-0 top-24">
         <div
           className={`flex-col h-auto w-auto select-none  bg-white rounded-lg mt-2 mr-5 p-10 pt-2 pb-4 drop-shadow-sm border-4 border-purple-300 ${
             !menu ? "hidden" : "flex"
@@ -85,6 +93,14 @@ export default function AppBar({ state = [false, false, false] }) {
             } `}
           >
             Ajuda
+          </h3>
+          <h3
+            onClick={() => r.push("/carrinho")}
+            className={`font-Lalezar text-2xl pt-5 active:scale-[1.05]  ${
+              !state[3] ? "text-gray-400" : null
+            } `}
+          >
+            Carrinho
           </h3>
         </div>
       </div>

@@ -82,14 +82,38 @@ function Layout_desktop() {
               className="flex xxxl:w-5/12"
             />
           </div>
-          <div className="flex flex-row gap-5 m-auto mt-0">
+          <div className="flex flex-row gap-5 m-auto mt-0 xxxl:mb-0">
             <img
-              src="/images/components_cards3.svg"
+              src="/images/image_card_p001.png"
               alt=""
               className="flex xxxl:w-5/12"
             />
             <img
-              src="/images/components_cards4.svg"
+              src="/images/image_card_p002.png"
+              alt=""
+              className="flex xxxl:w-5/12"
+            />
+          </div>
+          <div className=" flex-row gap-5 m-auto mt-0 mb-0 xxxl:flex hidden">
+            <img
+              src="/images/image_card_p1.png"
+              alt=""
+              className="flex xxxl:w-5/12"
+            />
+            <img
+              src="/images/image_card_p2.png"
+              alt=""
+              className="flex xxxl:w-5/12"
+            />
+          </div>
+          <div className=" flex-row gap-5 m-auto mt-0 xxxl:flex hidden">
+            <img
+              src="/images/image_card_p3.png"
+              alt=""
+              className="flex xxxl:w-5/12"
+            />
+            <img
+              src="/images/image_card_p4.png"
               alt=""
               className="flex xxxl:w-5/12"
             />

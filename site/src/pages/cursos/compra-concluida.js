@@ -10,10 +10,8 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <Head>
-        <title>
-          Compra Finalizada
-          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        </title>
+        <title>Compra Finalizada</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <AppBar state={[false, false, false]} />
       <div className="m-auto w-8/12 xxxl:w-10/12">

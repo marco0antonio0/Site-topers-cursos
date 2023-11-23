@@ -13,10 +13,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non augue i
   return (
     <div className="flex flex-col">
       <Head>
-        <title>
-          blog - sobre termos
-          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        </title>
+        <title>blog - sobre termos</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <AppBar state={[false, false, false]} />
       <div className="m-auto w-8/12 xxxl:w-10/12 mb-20">

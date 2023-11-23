@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <Head>
-        <title>Curso</title>
+        <title>Carrinho</title>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <AppBar state={[false, false, false, true]} />
@@ -47,11 +47,13 @@ export default function Home() {
           {/*           botão de ex */}
           <div
             onClick={() => {
-              hasdata ? r.push("/") : r.push("/cursos");
+              hasdata
+                ? r.push("/carrinho/metodo-de-pagamento")
+                : r.push("/cursos");
             }}
             className={`${
               !hasdata ? "bg-roxo" : " bg-green-400"
-            } m-auto mt-10 text-white px-14 py-5 shadow-2xl cursor-pointer active:scale-[1.05] select-none`}
+            } m-auto mt-10 text-white px-14 py-5 shadow-2xl cursor-pointer active:scale-[1.05] select-none mb-20`}
           >
             <span>
               {hasdata ? "Finalizar compra" : "Ir para cursos disponiveis"}

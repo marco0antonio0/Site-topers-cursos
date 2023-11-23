@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <Head>
-        <title>Curso</title>
+        <title>Finalizando compra</title>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <AppBar state={[false, false, false]} />

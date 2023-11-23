@@ -40,6 +40,10 @@ export class CookieManager {
     const listaPedidos = this.getListaPedidos();
     return listaPedidos.find((pedido) => pedido.id === id) || null;
   }
+
+  limparListaPedidos() {
+    nookies.destroy({}, "listaPedidos", { path: "/" });
+  }
 }
 
 // // Exemplo de uso

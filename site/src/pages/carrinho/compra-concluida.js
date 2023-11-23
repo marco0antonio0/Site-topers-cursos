@@ -4,8 +4,14 @@ import GridComponents from "@/components/gridComponents";
 import TemplateInformativo from "@/components/TemplateInformativo";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import { CookieManager } from "@/controller/cokieesManager";
+import { useEffect } from "react";
 
 export default function Home() {
+  const cookieManager = new CookieManager();
+  useEffect(() => {
+    cookieManager.limparListaPedidos();
+  });
   const r = useRouter();
   return (
     <div className="flex flex-col">
@@ -24,6 +30,7 @@ export default function Home() {
         <div
           onClick={(e) => {
             r.push("/");
+            cookieManager.limparListaPedidos();
           }}
           className="w-52 h-20 bg-roxoPerson flex flex-col shadow-lg m-auto mt-10 active:scale-[1.05] cursor-pointer select-none md:w-40 md:h-16 "
         >

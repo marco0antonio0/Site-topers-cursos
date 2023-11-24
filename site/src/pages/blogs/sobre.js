@@ -36,6 +36,7 @@ A plataforma começou a tomar forma, integrando uma interface amigável, recurso
     `## **Documentação**
 - Alexsandro F. Nascimento
 - Jean A. Dias    
+- Gabriel H. P. Maia    
 `,
   ];
   return (

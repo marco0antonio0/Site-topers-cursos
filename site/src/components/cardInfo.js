@@ -49,7 +49,12 @@ export default function CardInfo({ data }) {
         </div>
         <div className="flex flex-col w-2/3 text-white pl-10 pr-10 lg:w-mxw">
           <h1 className="text-3xl mt-20 font-bold lg:mt-5 ">{data.nome}</h1>
-          <p className="text-2xl mt-5">{data.desc_short}</p>
+          <p className="text-2xl mt-5">
+            {data.desc_short} <br />
+          </p>
+          <span className="text-2xl mt-5 font-bold">
+            Valor: R$ {data.valor}
+          </span>
           <img src={img} alt="" className="h-10 m-auto ml-0 mt-5" />
           <div
             onClick={() => {
